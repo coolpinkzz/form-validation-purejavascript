@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Registration</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="dropdown.js"></script>
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </div>
+    <div>
+        <span class="hamburger" onclick="openNav()"><img src="images/hamburger-icon.png"
+                alt="hamburger-icon.png" /></span>
+    </div>
+    <div onclick="closeNav()" class="container1 ">
+        <div class="row body1">
+            <div style="margin-top: 60px;"
+                class="col-12 col-sm-6 text-center text-sm-right p-0 order-sm-first order-last d-none  d-md-block ">
+                <img class="greetimg" src="images/greeting-img.png" alt="greeting image" />
+
+            </div>
+            <div style="background-color: #4d0fb2; margin-top: 60px; height: 586px;"
+                class="col-12 col-sm-12 col-md-5 col-lg-3   order-sm-last order-first form-body">
+                <h3 style="color: white; margin-top: 20px; text-align: center;">Registration Info</h3>
+
+                <form class="my-4 ml-lg-4" name="myForm" method="post">
+                    <div class="p-2">
+                        <input type="text" id="name" placeholder="Name">
+                        <br /><small style="color: red !important; display: none !important" id="namevalid">
+                            Your Name is not valid
+                        </small>
+                    </div>
+
+                    <div class="p-2">
+                        <input type="email" id=email placeholder="Email">
+                        <br /><small style="color: red !important; display: none !important" id="emailvalid">
+                            Your email is not valid
+                        </small>
+                    </div>
+
+                    <div class="p-2">
+                        <input type="tel" id="phone" placeholder="Phone">
+                        <br /><small style="color: red !important; display: none !important" id="phonevalid">
+                            Your Phone Number should be 10-Digit
+                        </small>
+                    </div>
+                    <div class="p-2">
+                        <input type="date" id="dob" placeholder="Birth Date">
+                        <br /><small style="color: red !important; display: none !important" id="dobvalid">
+                            Select Valid Birth Date
+                        </small>
+                    </div>
+                    <div class="radio-group-1">
+
+                        <div class="item"><label for="val10"><input name="radio1" type="radio">
+                                Male</label>
+                        </div>
+                        <div class="item"><label for="val11"><input name="radio1" type="radio" type="radio">
+                                Female</label></div>
+                        <div class="item"><label for="val12"><input name="radio1" type="radio">
+                                Other</label>
+                        </div>
+                    </div>
+                    <script>inputsToDropdown('.radio-group-1', 'Select Gender', 'radio', '.radio-group-1', '');</script>
+
+
+                    <!-- <div class="p-2">
+                        <select id="gender" name="carlist">
+                            <option value="gender">Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br /><small style="color: red !important; display: none !important" id="gendervalid">
+                            Select Valid Gender
+                        </small>
+                    </div> -->
+
+                    <div class="p-2">
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="p-2">
+                        <input type="password" id="confirmpassword" placeholder="Confirm Password">
+                    </div>
+
+
+                    <button style="margin-left: 5%;" type="submit" id="submitbtn"
+                        class="btn btn-warning d-flex align-items-center my-3"><img class="m-1" src="images/diya.png"
+                            alt="diya" />
+                        <strong class="m-1"> Submit </strong></button>
+
+
+
+                </form>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>
